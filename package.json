@@ -1,0 +1,34 @@
+{
+  "name": "bora-backend",
+  "version": "0.1.0",
+  "description": "Backend API para o ecossistema de mobilidade Bora",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon",
+    "dev:watch": "nodemon --watch src --ext ts --exec tsx src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "bora",
+    "mobility",
+    "transit",
+    "backend",
+    "typescript"
+  ],
+  "author": "Gustavo Nunes Pereira",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^22.10.1",
+    "nodemon": "^3.1.14",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^5.3.0"
+  }
+}
